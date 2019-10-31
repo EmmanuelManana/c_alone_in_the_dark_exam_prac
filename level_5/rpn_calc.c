@@ -75,7 +75,7 @@ int		rpn_calc(char *str, int *stack)
 		{
 			if (top > 0)
 			{
-				if ((stack[top - 1] = operate(stack[top - 1], stack[top], str[i])) == 						ERROR)
+				if ((stack[top - 1] = operate(stack[top - 1], stack[top], str[i])) == ERROR) 						ERROR)
 					return (write(1, "Error\n", 6));
 				top--;
 			}
